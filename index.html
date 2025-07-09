@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Works Sven Kühling — A photographic portfolio by Sven Kühling.">
+  <meta name="keywords" content="Sven Kühling, Sven-Hagen Kühling, photography, architecture, art, portfolio">
+  <meta name="author" content="Sven Kühling">
+  <title>Works Sven Kühling</title>
+
+  <meta property="og:title" content="Works Sven Kühling">
+  <meta property="og:description" content="A photographic portfolio by Sven Kühling.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="URL_TO_PREVIEW_IMAGE">
+  <meta property="og:url" content="https://yourwebsite.com">
+  <link rel="canonical" href="https://yourwebsite.com">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX');
+  </script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="slideshow">
+    <img id="slideshow-image" alt="Slideshow" onclick="changeImage()" oncontextmenu="return false;" ondragstart="return false;" onmousedown="return false;"/>
+    <div class="overlay">
+      <div class="header-group">
+        <div class="contact-bar">
+          <a href="mailto:sven.kuehling@gmail.com">sven.kuehling@gmail.com</a>
+          <span>+41 78 420 73 66</span>
+        </div>
+
+        <a href="https://www.instagram.com/sked.it/" class="site-title" target="_blank">Sven Kühling</a>
+      </div>
+
+      <footer>
+        <div class="footer-left">
+          <span class="image-title" id="title"></span><span class="image-year" id="year"></span>
+        </div>
+        <div class="footer-right disclaimer">
+          <div>Disclaimer © Sven Kühling</div>
+          <div>All contents of this website are (unless otherwise stated) the intellectual property of Sven Kühling and may not be used or reproduced without expressed permission.</div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    const images = [
+      {
+        url: 'img/sk-img-0059.jpg',
+        title: 'Encounters Series – ',
+        year: '2023'
+      },
+      {
+        url: 'img/sk-img-0069.jpg',
+        title: 'Encounters Series – ',
+        year: '2022'
+      },
+      {
+        url: 'img/sk-img-0829.jpg',
+        title: 'Encounters Series – ',
+        year: '2025'
+      },
+      {
+        url: 'img/sk-img-0836.jpg',
+        title: 'Encounters Series – ',
+        year: '2025'
+      },
+      {
+        url: 'img/sk-img-0895.jpg',
+        title: 'Encounters Series – ',
+        year: '2023'
+      },
+      {
+        url: 'img/sk-img-0909.jpg',
+        title: 'Encounters Series – ',
+        year: '2024'
+      },
+      {
+        url: 'img/sk-img-2679.jpg',
+        title: 'BIS Competition – w/ HGS',
+        year: '2022'
+      },
+    ];
+
+    function changeImage() {
+      const randomIndex = Math.floor(Math.random() * images.length);
+      const image = images[randomIndex];
+      document.getElementById('slideshow-image').src = image.url;
+      document.getElementById('title').innerText = image.title;
+      document.getElementById('year').innerText = image.year;
+    }
+
+    window.onload = changeImage;
+  </script>
+
+</body>
+</html>

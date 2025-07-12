@@ -41,7 +41,7 @@
 
       <footer>
         <div class="footer-left">
-          <span class="image-title" id="title"></span><span class="image-year" id="year"></span>
+          <span class="image-title" id="image-title"></span><span class="image-year" id="image-year"></span>
         </div>
         <div class="footer-right disclaimer">
           <div>Disclaimer © Sven Kühling</div>
@@ -54,366 +54,393 @@
   <script>
     const images = [
       {
-        url: 'img/sk-img-0059.jpg',
+        src: 'img/sk-img-0059.jpg',
         title: 'Encounters – ',
         year: '2022'
       },
       {
-        url: 'img/sk-img-0069.jpg',
+        src: 'img/sk-img-0069.jpg',
         title: 'Encounters – ',
         year: '2023'
       },
       {
-        url: 'img/sk-img-0829.jpg',
+        src: 'img/sk-img-0829.jpg',
         title: 'Encounters – ',
         year: '2021'
       },
       {
-        url: 'img/sk-img-0836.jpg',
+        src: 'img/sk-img-0836.jpg',
         title: 'Encounters – ',
         year: '2022'
       },
       {
-        url: 'img/sk-img-0895.jpg',
+        src: 'img/sk-img-0895.jpg',
         title: 'Encounters – ',
         year: '2022'
       },
       {
-        url: 'img/sk-img-0909.jpg',
+        src: 'img/sk-img-0909.jpg',
         title: 'Encounters – ',
         year: '2022'
       },
       {
-        url: 'img/sk-img-2679.jpg',
+        src: 'img/sk-img-2679.jpg',
         title: 'BIS Competition – w/ HGS',
         year: '2022'
       },
       {
-        url: 'img/sk-img-7367.jpg',
+        src: 'img/sk-img-7367.jpg',
         title: 'Monaco – ',
         year: '2025'
       },
       {
-        url: 'img/sk-img-7393.jpg',
+        src: 'img/sk-img-7393.jpg',
         title: 'Monaco – ',
         year: '2025'
       },
       {
-        url: 'img/sk-img-7399.jpg',
+        src: 'img/sk-img-7399.jpg',
         title: 'Monaco – ',
         year: '2025'
       },
       {
-        url: 'img/sk-img-7436.jpg',
+        src: 'img/sk-img-7436.jpg',
         title: 'Monaco – ',
         year: '2025'
       },
       {
-        url: 'img/sk-img-7562.jpg',
+        src: 'img/sk-img-7562.jpg',
         title: 'Lombardia – ',
         year: '2023'
       },
       {
-        url: 'img/sk-img-7757.jpg',
+        src: 'img/sk-img-7757.jpg',
         title: 'Lombardia – ',
         year: '2023'
       },
       {
-        url: 'img/sk-img-8189.jpg',
+        src: 'img/sk-img-8189.jpg',
         title: 'Helgoland – ',
         year: '2020'
       },
       {
-        url: 'img/sk-img-8558.jpg',
+        src: 'img/sk-img-8558.jpg',
         title: 'Lombardia – ',
         year: '2023'
       },
       {
-        url: 'img/sk-img-8558.jpg',
+        src: 'img/sk-img-8558.jpg',
         title: 'Encounters – ',
         year: '2022'
       },
       {
-        url: 'img/sk-img-9107.jpg',
+        src: 'img/sk-img-9107.jpg',
         title: 'Encounters – ',
         year: '2021'
       },
       {
-        url: 'img/sk-img-9139.jpg',
+        src: 'img/sk-img-9139.jpg',
         title: 'Encounters – ',
         year: '2021'
       },
       {
-        url: 'img/sk-img-9146.jpg',
+        src: 'img/sk-img-9146.jpg',
         title: 'Encounters – ',
         year: '2021'
       },
       {
-        url: 'img/sk-img-9402.jpg',
+        src: 'img/sk-img-9402.jpg',
         title: 'Encounters – ',
         year: '2021'
       },
       {
-        url: 'img/sk-img-9824.jpg',
+        src: 'img/sk-img-9824.jpg',
         title: 'Encounters – ',
         year: '2021'
       },
       {
-        url: 'img/sk-img-1168.jpg',
+        src: 'img/sk-img-1168.jpg',
         title: 'Encounters – ',
         year: '2022'
       },
       {
-        url: 'img/sk-img-1213.jpg',
+        src: 'img/sk-img-1213.jpg',
         title: 'Encounters – ',
         year: '2022'
       },
       {
-        url: 'img/sk-img-1276.jpg',
+        src: 'img/sk-img-1276.jpg',
         title: 'Encounters – ',
         year: '2022'
       },
       {
-        url: 'img/sk-img-1319.jpg',
+        src: 'img/sk-img-1319.jpg',
         title: 'Encounters – ',
         year: '2021'
       },
       {
-        url: 'img/sk-img-1351.jpg',
+        src: 'img/sk-img-1351.jpg',
         title: 'Encounters – ',
         year: '2022'
       },
       {
-        url: 'img/sk-img-1383.jpg',
+        src: 'img/sk-img-1383.jpg',
         title: 'Encounters – ',
         year: '2022'
       },
       {
-        url: 'img/sk-img-1391.jpg',
+        src: 'img/sk-img-1391.jpg',
         title: 'Encounters – ',
         year: '2021'
       },
       {
-        url: 'img/sk-img-1407.jpg',
+        src: 'img/sk-img-1407.jpg',
         title: 'Encounters – ',
         year: '2022'
       },
       {
-        url: 'img/sk-img-1537.jpg',
+        src: 'img/sk-img-1537.jpg',
         title: 'Encounters – ',
         year: '2021'
       },
       {
-        url: 'img/sk-img-1597.jpg',
+        src: 'img/sk-img-1597.jpg',
         title: 'Encounters – ',
         year: '2022'
       },
       {
-        url: 'img/sk-img-1678.jpg',
+        src: 'img/sk-img-1678.jpg',
         title: 'Hermannplatz – ',
         year: '2019'
       },
       {
-        url: 'img/sk-img-1744.jpg',
+        src: 'img/sk-img-1744.jpg',
         title: 'Encounters – ',
         year: '2022'
       },
       {
-        url: 'img/sk-img-1789.jpg',
+        src: 'img/sk-img-1789.jpg',
         title: 'Encounters – ',
         year: '2022'
       },
       {
-        url: 'img/sk-img-1863.jpg',
+        src: 'img/sk-img-1863.jpg',
         title: 'Encounters – ',
         year: '2022'
       },
       {
-        url: 'img/sk-img-1870.jpg',
+        src: 'img/sk-img-1870.jpg',
         title: 'Encounters – ',
         year: '2022'
       },
       {
-        url: 'img/sk-img-1925.jpg',
+        src: 'img/sk-img-1925.jpg',
         title: 'Encounters – ',
         year: '2022'
       },
       {
-        url: 'img/sk-img-2029.jpg',
+        src: 'img/sk-img-2029.jpg',
         title: 'Encounters – ',
         year: '2022'
       },
       {
-        url: 'img/sk-img-2116.jpg',
+        src: 'img/sk-img-2116.jpg',
         title: 'Encounters – ',
         year: '2022'
       },
       {
-        url: 'img/sk-img-2170.jpg',
+        src: 'img/sk-img-2170.jpg',
         title: 'Encounters – ',
         year: '2022'
       },
       {
-        url: 'img/sk-img-2190.jpg',
+        src: 'img/sk-img-2190.jpg',
         title: 'Hermannplatz – ',
         year: '2019'
       },
       {
-        url: 'img/sk-img-2228.jpg',
+        src: 'img/sk-img-2228.jpg',
         title: 'Hermannplatz – ',
         year: '2019'
       },
       {
-        url: 'img/sk-img-2251.jpg',
+        src: 'img/sk-img-2251.jpg',
         title: 'Hermannplatz – ',
         year: '2019'
       },
       {
-        url: 'img/sk-img-2562.jpg',
+        src: 'img/sk-img-2562.jpg',
         title: 'Encounters – ',
         year: '2022'
       },
       {
-        url: 'img/sk-img-2567.jpg',
+        src: 'img/sk-img-2567.jpg',
         title: 'Encounters – ',
         year: '2022'
       },
        {
-        url: 'img/sk-img-2589.jpg',
+        src: 'img/sk-img-2589.jpg',
         title: 'Encounters – ',
         year: '2022'
       },
       {
-        url: 'img/sk-img-2725.jpg',
+        src: 'img/sk-img-2725.jpg',
         title: 'Encounters – ',
         year: '2022'
       },
       {
-        url: 'img/sk-img-2730.jpg',
+        src: 'img/sk-img-2730.jpg',
         title: 'Encounters – ',
         year: '2022'
       },
       {
-        url: 'img/sk-img-2961.jpg',
+        src: 'img/sk-img-2961.jpg',
         title: 'Encounters – ',
         year: '2022'
       },
       {
-        url: 'img/sk-img-3036.jpg',
+        src: 'img/sk-img-3036.jpg',
         title: 'Encounters – ',
         year: '2022'
       },
       {
-        url: 'img/sk-img-3118.jpg',
+        src: 'img/sk-img-3118.jpg',
         title: 'Encounters – ',
         year: '2022'
       },
       {
-        url: 'img/sk-img-3163.jpg',
+        src: 'img/sk-img-3163.jpg',
         title: 'Encounters – ',
         year: '2022'
       },
       {
-        url: 'img/sk-img-3407.jpg',
+        src: 'img/sk-img-3407.jpg',
         title: 'Encounters – ',
         year: '2023'
       },
       {
-        url: 'img/sk-img-3444.jpg',
+        src: 'img/sk-img-3444.jpg',
         title: 'Encounters – ',
         year: '2024'
       },
       {
-        url: 'img/sk-img-3610.jpg',
+        src: 'img/sk-img-3610.jpg',
         title: 'Encounters – ',
         year: '2024'
       },
       {
-        url: 'img/sk-img-3918.jpg',
+        src: 'img/sk-img-3918.jpg',
         title: 'Encounters – ',
         year: '2022'
       },
       {
-        url: 'img/sk-img-4709.jpg',
+        src: 'img/sk-img-4709.jpg',
         title: 'Encounters – ',
         year: '2023'
       },
       {
-        url: 'img/sk-img-5004.jpg',
+        src: 'img/sk-img-5004.jpg',
         title: 'Encounters – ',
         year: '2023'
       },
       {
-        url: 'img/sk-img-5015.jpg',
+        src: 'img/sk-img-5015.jpg',
         title: 'Encounters – ',
         year: '2023'
       },
       {
-        url: 'img/sk-img-5782.jpg',
+        src: 'img/sk-img-5782.jpg',
         title: 'Lombardia – ',
         year: '2023'
       },
       {
-        url: 'img/sk-img-5803.jpg',
+        src: 'img/sk-img-5803.jpg',
         title: 'Lombardia – ',
         year: '2023'
       },
       {
-        url: 'img/sk-img-6077.jpg',
+        src: 'img/sk-img-6077.jpg',
         title: 'Encounters – ',
         year: '2023'
       },
       {
-        url: 'img/sk-img-6163.jpg',
+        src: 'img/sk-img-6163.jpg',
         title: 'Encounters – ',
         year: '2019'
       },
       {
-        url: 'img/sk-img-6180.jpg',
+        src: 'img/sk-img-6180.jpg',
         title: 'BAD w/ Truwant + Rodet + – ',
         year: '2025'
       },
       {
-        url: 'img/sk-img-6186.jpg',
+        src: 'img/sk-img-6186.jpg',
         title: 'BAD w/ Truwant + Rodet + – ',
         year: '2025'
       },
       {
-        url: 'img/sk-img-6579.jpg',
+        src: 'img/sk-img-6579.jpg',
         title: 'Encounters – ',
         year: '2019'
       },
       {
-        url: 'img/sk-img-6604.jpg',
+        src: 'img/sk-img-6604.jpg',
         title: 'Encounters – ',
         year: '2019'
       },
       {
-        url: 'img/sk-img-6608.jpg',
+        src: 'img/sk-img-6608.jpg',
         title: 'Encounters – ',
         year: '2019'
       },
       {
-        url: 'img/sk-img-6833.jpg',
+        src: 'img/sk-img-6833.jpg',
         title: 'Encounters – ',
         year: '2023'
       },
       {
-        url: 'img/sk-img-7360.jpg',
+        src: 'img/sk-img-7360.jpg',
         title: 'Monaco – ',
         year: '2025'
       },
     ];
 
-    function changeImage() {
-      const randomIndex = Math.floor(Math.random() * images.length);
-      const image = images[randomIndex];
-      document.getElementById('slideshow-image').src = image.url;
-      document.getElementById('title').innerText = image.title;
-      document.getElementById('year').innerText = image.year;
+  function shuffle(array) {
+    let currentIndex = array.length, randomIndex;
+    while (currentIndex !== 0) {
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+
+      [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex], array[currentIndex]];
     }
 
-    window.onload = changeImage;
+    return array;
+  }
+
+  let shuffledImages = shuffle([...images]);
+  let currentIndex = 0;
+
+  const imgElement = document.getElementById('slideshow-image');
+  const titleElement = document.getElementById('image-title');
+  const yearElement = document.getElementById('image-year');
+
+  function showNextImage() {
+    if (currentIndex >= shuffledImages.length) {
+      shuffledImages = shuffle([...images]);
+      currentIndex = 0;
+    }
+
+    const image = shuffledImages[currentIndex];
+    imgElement.src = image.src;
+    titleElement.textContent = image.title;
+    yearElement.textContent = image.year;
+    
+    currentIndex++;
+  }
+
+  imgElement.addEventListener('click', showNextImage);
+  window.onload = showNextImage;
   </script>
 
 </body>

@@ -1,13 +1,19 @@
 body, html {
   margin: 0;
   padding: 0;
-  background-color: #FFFFFF;
+  background-color: white;
   font-family: Arial, sans-serif;
 }
 
 .slideshow {
   position: relative;
-  height: 100vh;
+  height: 96vh;
+  overflow: hidden;
+}
+
+.slideshow-2 {
+  position: relative;
+  height: 65vh;
   overflow: hidden;
 }
 
@@ -22,12 +28,24 @@ body, html {
   cursor: crosshair;
 }
 
+.slideshow-2 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 75%;
+  max-height: 100%;
+  object-fit: contain;
+  cursor: crosshair;
+}
+
 .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 5;
   pointer-events: none;
 }
 
@@ -77,6 +95,35 @@ body, html {
   pointer-events: auto;
 }
 
+.section-title {
+  position: absolute;
+  z-index: 10;
+  align-self: flex-start;
+  margin-top: 50px;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: right;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+  pointer-events: none;
+}
+
+.section-wrapper {
+background-color: black;
+width: relative;
+position: relative;
+padding-top: 2px;
+padding-bottom: 10vh;
+}
+
 footer {
   position: absolute;
   bottom: 0;
@@ -88,9 +135,18 @@ footer {
   pointer-events: auto;
 }
 
-.footer-left {
+.footer-left-black {
   color: black;
   font-style: italic;
+  text-align: left;   
+  margin-left: 5%;
+}
+
+.footer-left-white {
+  color: white;
+  font-style: italic;
+  text-align: left;   
+  margin-left: 5%;
 }
 
 .image-year {
@@ -99,11 +155,12 @@ footer {
 }
 
 .footer-right {
-  color: black;
+  color: white;
   font-style: italic;
   text-align: right;
-  max-width: 80%;
-  margin-right: 40px;
+  max-width: 100%;
+  margin-right: 10px;
+  font-size: 0.4em;
 }
 
 .footer-right div {

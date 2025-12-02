@@ -4,14 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Works Sven Kühling — A photographic portfolio by Sven Kühling.">
-  <meta name="keywords" content="Sven Kühling, Sven-Hagen Kühling, photography, architecture, art, portfolio">
+  <meta name="keywords" content="Sven Kühling, Sven-Hagen Kühling, Sven Hagen Kühling, Kuehling, Kühling, sked.it, photography, fotografie, architektur, architecture, schweiz, basel, zürich, zurich, art, portfolio, works">
   <meta name="author" content="Sven Kühling">
   <title>Works Sven Kühling</title>
 
   <meta property="og:title" content="Works Sven Kühling">
-  <meta property="og:description" content="A photographic work by Sven Kühling.">
+  <meta property="og:description" content="Photographic works by Sven Kühling.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="URL_TO_PREVIEW_IMAGE">
+  <meta property="og:image" content="https://svenkuehling.com/img/main/sk-img-2679.jpg">
   <meta property="og:url" content="https://svenkuehling.com">
   <link rel="canonical" href="https://svenkuehling.com">
     
@@ -27,431 +27,139 @@
 </head>
 <body>
 
+<!-- ORIGINAL FIRST SLIDESHOW -->
   <div class="slideshow">
-    <img id="slideshow-image" alt="Slideshow" onclick="changeImage()" oncontextmenu="return false;" ondragstart="return false;" onmousedown="return false;"/>
+    <img id="slideshow-image" alt="">
     <div class="overlay">
       <div class="header-group">
         <div class="contact-bar">
           <a href="mailto:info@svenkuehling.com">info@svenkuehling.com</a>
-          <span>+41 78 420 73 66</span>
+          <a href="tel:+41784207366">+41 78 420 73 66</a>
         </div>
 
         <a href="https://www.instagram.com/sked.it/" class="site-title" target="_blank">Sven Kühling</a>
       </div>
 
       <footer>
-        <div class="footer-left">
+        <div class="footer-left-black">
           <span class="image-title" id="image-title"></span><span class="image-year" id="image-year"></span>
-        </div>
-        <div class="footer-right disclaimer">
-          <div>Disclaimer © Sven Kühling</div>
-          <div>All contents of this website are (unless otherwise stated) the intellectual property of Sven Kühling and may not be used or reproduced without expressed permission.</div>
         </div>
       </footer>
     </div>
   </div>
 
-  <script>
-    const images = [
-      {
-        src: 'img/sk-img-0059.jpg',
-        title: 'Encounters – ',
-        year: '2022'
-      },
-      {
-        src: 'img/sk-img-0069.jpg',
-        title: 'Encounters – ',
-        year: '2023'
-      },
-      {
-        src: 'img/sk-img-0774.jpg',
-        title: 'Encounters – ',
-        year: '2021'
-      },
-      {
-        src: 'img/sk-img-0829.jpg',
-        title: 'Encounters – ',
-        year: '2021'
-      },
-      {
-        src: 'img/sk-img-0832.jpg',
-        title: 'Encounters – ',
-        year: '2021'
-      },
-      {
-        src: 'img/sk-img-0836.jpg',
-        title: 'Encounters – ',
-        year: '2022'
-      },
-      {
-        src: 'img/sk-img-0895.jpg',
-        title: 'Encounters – ',
-        year: '2022'
-      },
-      {
-        src: 'img/sk-img-0909.jpg',
-        title: 'Encounters – ',
-        year: '2022'
-      },
-      {
-        src: 'img/sk-img-2679.jpg',
-        title: 'BIS Competition – w/ HGS',
-        year: '2022'
-      },
-      {
-        src: 'img/sk-img-7367.jpg',
-        title: 'Monaco – ',
-        year: '2025'
-      },
-      {
-        src: 'img/sk-img-7393.jpg',
-        title: 'Monaco – ',
-        year: '2025'
-      },
-      {
-        src: 'img/sk-img-7399.jpg',
-        title: 'Monaco – ',
-        year: '2025'
-      },
-      {
-        src: 'img/sk-img-7436.jpg',
-        title: 'Monaco – ',
-        year: '2025'
-      },
-      {
-        src: 'img/sk-img-7562.jpg',
-        title: 'Lombardia – ',
-        year: '2023'
-      },
-      {
-        src: 'img/sk-img-7757.jpg',
-        title: 'Lombardia – ',
-        year: '2023'
-      },
-      {
-        src: 'img/sk-img-8189.jpg',
-        title: 'Helgoland – ',
-        year: '2020'
-      },
-      {
-        src: 'img/sk-img-8558.jpg',
-        title: 'Lombardia – ',
-        year: '2023'
-      },
-      {
-        src: 'img/sk-img-8558.jpg',
-        title: 'Encounters – ',
-        year: '2022'
-      },
-      {
-        src: 'img/sk-img-9107.jpg',
-        title: 'Encounters – ',
-        year: '2021'
-      },
-      {
-        src: 'img/sk-img-9139.jpg',
-        title: 'Encounters – ',
-        year: '2021'
-      },
-      {
-        src: 'img/sk-img-9146.jpg',
-        title: 'Encounters – ',
-        year: '2021'
-      },
-      {
-        src: 'img/sk-img-9402.jpg',
-        title: 'Encounters – ',
-        year: '2021'
-      },
-      {
-        src: 'img/sk-img-9824.jpg',
-        title: 'Encounters – ',
-        year: '2021'
-      },
-      {
-        src: 'img/sk-img-1168.jpg',
-        title: 'Encounters – ',
-        year: '2022'
-      },
-      {
-        src: 'img/sk-img-1213.jpg',
-        title: 'Encounters – ',
-        year: '2022'
-      },
-      {
-        src: 'img/sk-img-1276.jpg',
-        title: 'Encounters – ',
-        year: '2022'
-      },
-      {
-        src: 'img/sk-img-1319.jpg',
-        title: 'Encounters – ',
-        year: '2021'
-      },
-      {
-        src: 'img/sk-img-1351.jpg',
-        title: 'Encounters – ',
-        year: '2022'
-      },
-      {
-        src: 'img/sk-img-1383.jpg',
-        title: 'Encounters – ',
-        year: '2022'
-      },
-      {
-        src: 'img/sk-img-1391.jpg',
-        title: 'Encounters – ',
-        year: '2021'
-      },
-      {
-        src: 'img/sk-img-1407.jpg',
-        title: 'Encounters – ',
-        year: '2022'
-      },
-      {
-        src: 'img/sk-img-1537.jpg',
-        title: 'Encounters – ',
-        year: '2021'
-      },
-      {
-        src: 'img/sk-img-1597.jpg',
-        title: 'Encounters – ',
-        year: '2022'
-      },
-      {
-        src: 'img/sk-img-1678.jpg',
-        title: 'Hermannplatz – ',
-        year: '2019'
-      },
-      {
-        src: 'img/sk-img-1744.jpg',
-        title: 'Encounters – ',
-        year: '2022'
-      },
-      {
-        src: 'img/sk-img-1789.jpg',
-        title: 'Encounters – ',
-        year: '2022'
-      },
-      {
-        src: 'img/sk-img-1863.jpg',
-        title: 'Encounters – ',
-        year: '2022'
-      },
-      {
-        src: 'img/sk-img-1870.jpg',
-        title: 'Encounters – ',
-        year: '2022'
-      },
-      {
-        src: 'img/sk-img-1925.jpg',
-        title: 'Encounters – ',
-        year: '2022'
-      },
-      {
-        src: 'img/sk-img-2029.jpg',
-        title: 'Encounters – ',
-        year: '2022'
-      },
-      {
-        src: 'img/sk-img-2116.jpg',
-        title: 'Encounters – ',
-        year: '2022'
-      },
-      {
-        src: 'img/sk-img-2170.jpg',
-        title: 'Encounters – ',
-        year: '2022'
-      },
-      {
-        src: 'img/sk-img-2190.jpg',
-        title: 'Hermannplatz – ',
-        year: '2019'
-      },
-      {
-        src: 'img/sk-img-2228.jpg',
-        title: 'Hermannplatz – ',
-        year: '2019'
-      },
-      {
-        src: 'img/sk-img-2251.jpg',
-        title: 'Hermannplatz – ',
-        year: '2019'
-      },
-      {
-        src: 'img/sk-img-2562.jpg',
-        title: 'Encounters – ',
-        year: '2022'
-      },
-      {
-        src: 'img/sk-img-2567.jpg',
-        title: 'Encounters – ',
-        year: '2022'
-      },
-       {
-        src: 'img/sk-img-2589.jpg',
-        title: 'Encounters – ',
-        year: '2022'
-      },
-      {
-        src: 'img/sk-img-2725.jpg',
-        title: 'Encounters – ',
-        year: '2022'
-      },
-      {
-        src: 'img/sk-img-2730.jpg',
-        title: 'Encounters – ',
-        year: '2022'
-      },
-      {
-        src: 'img/sk-img-2961.jpg',
-        title: 'Encounters – ',
-        year: '2022'
-      },
-      {
-        src: 'img/sk-img-3036.jpg',
-        title: 'Encounters – ',
-        year: '2022'
-      },
-      {
-        src: 'img/sk-img-3118.jpg',
-        title: 'Encounters – ',
-        year: '2022'
-      },
-      {
-        src: 'img/sk-img-3163.jpg',
-        title: 'Encounters – ',
-        year: '2022'
-      },
-      {
-        src: 'img/sk-img-3407.jpg',
-        title: 'Encounters – ',
-        year: '2023'
-      },
-      {
-        src: 'img/sk-img-3444.jpg',
-        title: 'Encounters – ',
-        year: '2024'
-      },
-      {
-        src: 'img/sk-img-3610.jpg',
-        title: 'Encounters – ',
-        year: '2024'
-      },
-      {
-        src: 'img/sk-img-3918.jpg',
-        title: 'Encounters – ',
-        year: '2022'
-      },
-      {
-        src: 'img/sk-img-4709.jpg',
-        title: 'Encounters – ',
-        year: '2023'
-      },
-      {
-        src: 'img/sk-img-5004.jpg',
-        title: 'Encounters – ',
-        year: '2023'
-      },
-      {
-        src: 'img/sk-img-5015.jpg',
-        title: 'Encounters – ',
-        year: '2023'
-      },
-      {
-        src: 'img/sk-img-5782.jpg',
-        title: 'Lombardia – ',
-        year: '2023'
-      },
-      {
-        src: 'img/sk-img-5803.jpg',
-        title: 'Lombardia – ',
-        year: '2023'
-      },
-      {
-        src: 'img/sk-img-6077.jpg',
-        title: 'Encounters – ',
-        year: '2023'
-      },
-      {
-        src: 'img/sk-img-6163.jpg',
-        title: 'Encounters – ',
-        year: '2019'
-      },
-      {
-        src: 'img/sk-img-6180.jpg',
-        title: 'BAD w/ Truwant + Rodet + – ',
-        year: '2025'
-      },
-      {
-        src: 'img/sk-img-6186.jpg',
-        title: 'BAD w/ Truwant + Rodet + – ',
-        year: '2025'
-      },
-      {
-        src: 'img/sk-img-6579.jpg',
-        title: 'Encounters – ',
-        year: '2019'
-      },
-      {
-        src: 'img/sk-img-6604.jpg',
-        title: 'Encounters – ',
-        year: '2019'
-      },
-      {
-        src: 'img/sk-img-6608.jpg',
-        title: 'Encounters – ',
-        year: '2019'
-      },
-      {
-        src: 'img/sk-img-6833.jpg',
-        title: 'Encounters – ',
-        year: '2023'
-      },
-      {
-        src: 'img/sk-img-7360.jpg',
-        title: 'Monaco – ',
-        year: '2025'
-      },
-    ];
 
-  function shuffle(array) {
-    let currentIndex = array.length, randomIndex;
-    while (currentIndex !== 0) {
-      randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex--;
+<!-- P7 SLIDESHOW -->
+<div class="section-wrapper">
+    <div class="footer-right disclaimer">
+      <div>Disclaimer © Sven Kühling</div><div>All contents of this website are (unless otherwise stated) the intellectual property of Sven Kühling and may not be used or reproduced without expressed permission.</div>
+      <div></div>
 
-      [array[currentIndex], array[randomIndex]] = [
-        array[randomIndex], array[currentIndex]];
-    }
-
-    return array;
-  }
-
-  let shuffledImages = shuffle([...images]);
-  let currentIndex = 0;
-
-  const imgElement = document.getElementById('slideshow-image');
-  const titleElement = document.getElementById('image-title');
-  const yearElement = document.getElementById('image-year');
-
-  function showNextImage() {
-    if (currentIndex >= shuffledImages.length) {
-      shuffledImages = shuffle([...images]);
-      currentIndex = 0;
-    }
-
-    const image = shuffledImages[currentIndex];
-    imgElement.src = image.src;
-    titleElement.textContent = image.title;
-    yearElement.textContent = image.year;
+    </div>
+  <div class="slideshow-2" id="slideshow-project7">
+    <img id="slideshow7-image" alt="" />
     
-    currentIndex++;
-  }
+    <div class="section-title">2509_nihon_jpn</div>
+    
+      <footer>
+        <div class="footer-left-white">
+          <span class="image-title" id="image-title-p7"></span><span class="image-year" id="image-year-p7"></span>
+        </div>
+      </footer>
+  </div>
+</div>
 
-  imgElement.addEventListener('click', showNextImage);
-  window.onload = showNextImage;
-  </script>
+<!-- P6 SLIDESHOW -->
+<div class="section-wrapper">
+  <div class="slideshow-2" id="slideshow-project6">
+    <img id="slideshow6-image" alt="" />
+    
+    <div class="section-title">2404_f1_monaco_mco_mco</div>
+    
+      <footer>
+        <div class="footer-left-white">
+          <span class="image-title" id="image-title-p6"></span><span class="image-year" id="image-year-p6"></span>
+        </div>
+      </footer>
+  </div>
+</div>
 
+<!-- P5 SLIDESHOW -->
+<div class="section-wrapper">
+  <div class="slideshow-2" id="slideshow-project5">
+    <img id="slideshow5-image" alt="" />
+    
+    <div class="section-title">2412_bad_renovation_tr_loe_de</div>
+    
+      <footer>
+        <div class="footer-left-white">
+          <span class="image-title" id="image-title-p5"></span><span class="image-year" id="image-year-p5"></span>
+        </div>
+      </footer>
+  </div>
+</div>
+
+<!-- P4 SLIDESHOW -->
+<div class="section-wrapper">
+  <div class="slideshow-2" id="slideshow-project4">
+    <img id="slideshow4-image" alt="" />
+    
+    <div class="section-title">2309_lombardia_mn_it</div>
+    
+      <footer>
+        <div class="footer-left-white">
+          <span class="image-title" id="image-title-p4"></span><span class="image-year" id="image-year-p4"></span>
+        </div>
+      </footer>
+  </div>
+</div>
+
+<!-- P3 SLIDESHOW -->
+<div class="section-wrapper">
+  <div class="slideshow-2" id="slideshow-project3">
+    <img id="slideshow3-image" alt="" />
+    
+    <div class="section-title">2304_birsfelden_zentrum_2_bs_ch</div>
+    
+      <footer>
+        <div class="footer-left-white">
+          <span class="image-title" id="image-title-p3"></span><span class="image-year" id="image-year-p3"></span>
+        </div>
+      </footer>
+  </div>
+</div>
+
+<!-- P2 SLIDESHOW -->
+<div class="section-wrapper">
+  <div class="slideshow-2" id="slideshow-project2">
+    <img id="slideshow2-image" alt="" />
+    
+    <div class="section-title">2205_sicilia_pmo_it 
+</div>
+    
+      <footer>
+        <div class="footer-left-white">
+          <span class="image-title" id="image-title-p2"></span><span class="image-year" id="image-year-p2"></span>
+        </div>
+      </footer>
+  </div>
+</div>
+
+<!-- P1 SLIDESHOW -->
+<div class="section-wrapper">
+  <div class="slideshow-2" id="slideshow-project1">
+    <img id="slideshow1-image" alt="" />
+    
+    <div class="section-title">1906_hermannplatz_ber_de</div>
+    
+      <footer>
+        <div class="footer-left-white">
+          <span class="image-title" id="image-title-p1"></span><span class="image-year" id="image-year-p1"></span>
+        </div>
+      </footer>
+  </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>

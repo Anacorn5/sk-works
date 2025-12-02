@@ -353,7 +353,6 @@ createSlideshow(
 createSlideshow(
   [
     { src: "img/projects/p4/sk-img-p4-1.jpg", title: " sk – ", year: "2023" },
-    { src: "img/projects/p4/sk-img-p4-2.jpg", title: " sk – ", year: "2023" },
     { src: "img/projects/p4/sk-img-p4-3.jpg", title: " sk – ", year: "2023" },
     { src: "img/projects/p4/sk-img-p4-4.jpg", title: " sk – ", year: "2023" },
     { src: "img/projects/p4/sk-img-p4-5.jpg", title: " sk – ", year: "2023" },
